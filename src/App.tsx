@@ -1,17 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Acordion from './components/Acordion/Acordion';
-import Apptitle from './components/Apptitle/Apptitle';
+import Pagetitle from './components/Pagetitle/Pagetitle';
 import Reiting from './components/Reiting/Reiting';
 
 function App() {
   return (
     <div>
-      <Apptitle />
-      <Reiting />
+      <Pagetitle title={"This is APP component"}/>
+      Artical 1
+      <Reiting value={1}/>
       <Acordion />
-      <Reiting />
+      <Pagetitle title={"React"}/>
+      Artical 2
+      <Reiting value={3}/>
     </div>
   );
 }
